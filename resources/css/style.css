@@ -1,0 +1,33 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4em;
+}
+
+.green {
+  background-color: cadetblue;
+  color: white;
+}
+
+.green.TO {
+  width: 20%;
+}
+header {
+
+}
+
+.background {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+h4 {
+  text-transform: uppercase;
+}
