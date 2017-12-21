@@ -13,6 +13,7 @@ body {
   margin: auto;
 }
 
+
 /* The big background in the header */
 header {
   background-image: url("../images/glasses-bg.png");
@@ -81,7 +82,30 @@ h4 {
   text-transform: uppercase;
 }
 
+/* All three services together */
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+/* Each service */
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  margin: 3rem;
+}
+
 /* Icon images */
-.image-icon {
-  height: 100px;
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper {
+  width: 3.5rem;
 }
