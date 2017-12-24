@@ -58,6 +58,10 @@ ul li {
   list-style-type: none;
 }
 
+.mobile-list {
+  display: none;
+}
+
 .flex {
   display: flex;
   justify-content: flex-end;
@@ -108,4 +112,125 @@ h4 {
 
 .service img.paper {
   width: 3.5rem;
+}
+
+.green {
+    background-color: cadetblue;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 2rem
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
+
+  .banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .list ul {
+    display: none;
+  }
+
+  .mobile-list {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+   background-position: 20%;
+   height: 17rem;
+ }
+
+ .banner {
+   width: 100%;
+   padding: 0 1rem;
+   margin: 9rem auto 0 auto;
+   text-align: center;
+ }
+
+ .banner h1 {
+   font-size: 1rem;
+ }
+
+ .services {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info .green {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
 }
